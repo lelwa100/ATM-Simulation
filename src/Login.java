@@ -16,12 +16,12 @@
             int pin = input.nextInt();
 
             if (username.equals(savedUser) && pin == savedPin) {
-                System.out.println("Login successful!");
+                System.out.println("Login successfully!");
                 return true;
+
             } else {
                 System.out.println("Invalid username or PIN!");
                 return false;
             }
         }
-
     }
