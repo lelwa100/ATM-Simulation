@@ -18,7 +18,7 @@ public class Withdraw {
       System.out.println("Minimum withdrawal is R10!");
 
     } else {
-      System.out.println("Insufficient balance!");
+      System.out.println("Invalid amount");
     }
   }
 }

@@ -16,10 +16,10 @@ public class Register {
             System.out.println("Enter username:");
             username = input.nextLine();
 
-            if (username.matches("[a-zA-Z]+") && !hasRepeatedChars(username)) {
+            if (username.matches("[a-zA-Z]{3,}+") && !hasRepeatedChars(username)) {
                 break;
             } else {
-                System.out.println("Invalid username! Use normal letters only.");
+                System.out.println("Invalid username!Use at least 3 letters");
             }
         }
 
