@@ -1,4 +1,4 @@
-mport java.util.Scanner;
+import java.util.Scanner;
 
 public class Deposit {
 
@@ -17,7 +17,7 @@ public class Deposit {
       System.out.println("Minimum deposit is R10!");
 
     } else {
-      System.out.println("Deposit must be multiples of R10!");
+      System.out.println("Maximum Deposit is R10!");
     }
   }
 }
