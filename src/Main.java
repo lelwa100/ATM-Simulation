@@ -18,14 +18,15 @@ public class Main {
 
             while (true) {
 
-                System.out.println("==================================");
-                System.out.println("        WELCOME TO ATM");
-                System.out.println("==================================");
-                System.out.println("1. Check Account Balance");
-                System.out.println("2. Deposit Funds");
-                System.out.println("3. Withdraw Funds");
-                System.out.println("4. Logout");
-                System.out.println("==================================");
+
+                System.out.println("╔════════════════════════════════════╗");
+                System.out.println("║          🏧WELCOME TO ATM          ║");
+                System.out.println("║════════════════════════════════════╣");
+                System.out.println("║  1. 💰 Check Account Balance       ║");
+                System.out.println("║  2. 💵 Deposit Funds               ║");
+                System.out.println("║  3. 💸 Withdraw Funds              ║");
+                System.out.println("║  4. ❌ Logout                      ║");
+                System.out.println("╚════════════════════════════════════╝");
 
                 System.out.print("Select an option: ");
 
