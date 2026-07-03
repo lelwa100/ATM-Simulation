@@ -16,7 +16,7 @@ public class Register {
             System.out.println("Enter username:");
             username = input.nextLine();
 
-            if (username.matches("[a-zA-Z]{3,}+") && !hasRepeatedChars(username)) {
+            if (username.matches("[a-zA-Z]{3,}") && !allSameChars(username)) {
                 break;
             } else {
                 System.out.println("Invalid username!Use at least 3 letters");
@@ -39,12 +39,14 @@ public class Register {
     }
 
     // METHOD TO CHECK REPEATED CHARACTERS
-    public boolean hasRepeatedChars(String text) {
-        for (int i = 0; i < text.length() - 1; i++) {
-            if (text.charAt(i) == text.charAt(i + 1)) {
-                return true;
+    public boolean allSameChars(String username) {
+        char first = username.charAt(0);
+
+        for (int i = 1; i < username.length(); i++) {
+            if (username.charAt(i) != first) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 }
